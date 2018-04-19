@@ -173,21 +173,23 @@ function moveDodgerLeft() {
    var left = positionToInteger(DODGER.style.left)
    var left_limit = 0
 
-   if(left > 175){
-    left_limit =179
-  }else {
+   if(left > 176){
+    left_limit =180
+    }else {
       left_limit = left +4
     }
+    if(left_limit < 180) {
 
-   function step() {
-     DODGER.style.left = `${left += 1}px`
+     function step() {
+       DODGER.style.left = `${left += 1}px`
 
-     if (left < left_limit) {
-       window.requestAnimationFrame(step)
+       if (left < left_limit) {
+         window.requestAnimationFrame(step)
+       }
      }
-   }
 
-   window.requestAnimationFrame(step)
+     window.requestAnimationFrame(step)
+   }
 
 }
 

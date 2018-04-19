@@ -39,10 +39,10 @@ function checkCollision(rock) {
     if (rockLeftEdge < dodgerLeftEdge && rockRightEdge > dodgerLeftEdge){
 
       return true;
-    }else if (rockLeftEdge < dodgerLeftEdge && rockRightEdge > dodgerLeftEdge) {      
-      return true;      
     }else if (rockLeftEdge < dodgerLeftEdge && rockRightEdge > dodgerLeftEdge) {
-      
+      return true;
+    }else if (rockLeftEdge < dodgerLeftEdge && rockRightEdge > dodgerLeftEdge) {
+
     }else {
       return false;
     }
@@ -56,10 +56,10 @@ function checkCollision(rock) {
                * 3. The rock's left edge is < the DODGER's right edge,
                *    and the rock's right edge is > the DODGER's right edge
                */
-      
+
     }
   }
-}
+
 
 function createRock(x) {
   const rock = document.createElement('div')

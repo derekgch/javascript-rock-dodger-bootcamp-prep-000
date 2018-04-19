@@ -199,7 +199,7 @@ function moveDodgerRight() {
    var right_limit = 180
 
    if(right < 176 ){
-    right_limit =right +4
+    right_limit = right +4
     }
 
     if(right_limit < 180 ) {

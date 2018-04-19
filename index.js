@@ -204,9 +204,9 @@ function moveDodgerRight() {
     if(right_limit < 180 ) {
 
      function step() {
-       DODGER.style.left = `${left -= 1}px`
+       DODGER.style.right = `${right += 1}px`
 
-       if (left > left_limit) {
+       if (right > right_limit) {
          window.requestAnimationFrame(step)
        }
      }

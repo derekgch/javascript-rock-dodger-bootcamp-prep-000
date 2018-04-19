@@ -45,7 +45,7 @@ function checkCollision(rock) {
       return true;
     }else {
       return false;
-    }
+    
        /**
                * Think about it -- what's happening here?
                * There's been a collision if one of three things is true:
@@ -110,7 +110,7 @@ function createRock(x) {
      rock.remove();
     }
    }
-   
+
    window.requestAnimationFrame(moveRock);
 
 

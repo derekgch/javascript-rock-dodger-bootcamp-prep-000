@@ -196,7 +196,7 @@ function moveDodgerRight() {
    var right = positionToInteger(DODGER.style.right)
    var right_limit = 0
 
-   if(right > 3){
+   if(right < 176){
     right_limit =right +4
     }else {
       right_limit = 180

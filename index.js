@@ -156,10 +156,6 @@ function moveDodger(e) {
       moveDodgerRight();
       return e.preventDefault();
     }
-
-
-
-
 }
 
 function moveDodgerLeft() {

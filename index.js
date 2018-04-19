@@ -77,7 +77,7 @@ function createRock(x) {
    * Now that we have a rock, we'll need to append
    * it to GAME and move it downwards.
    */
-}
+
 
   /**
    * This function moves the rock. (2 pixels at a time
@@ -100,6 +100,7 @@ function createRock(x) {
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
      */
+   }
 
 
   // We should kick of the animation of the rock around here

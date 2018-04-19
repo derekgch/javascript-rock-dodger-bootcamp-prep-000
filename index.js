@@ -214,7 +214,6 @@ function moveDodgerRight() {
      window.requestAnimationFrame(step)
    }
 
-
 }
 
 /**

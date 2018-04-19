@@ -135,7 +135,7 @@ function endGame() {
 
   clearInterval(gameInterval);
   while (ROCKS.size > 0) {
-    ROCKS.pop();
+    ROCKS.pop().remove();
   }
   window.removeEventListener('keydown', moveDodger);
   console.log("YOU LOSE!");

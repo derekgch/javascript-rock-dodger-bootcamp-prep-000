@@ -171,9 +171,17 @@ function moveDodgerLeft() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    var left = positionToInteger(DODGER.style.left)
+   var left_limit = left+4
 
-   DODGER.style.left = `${left += 4}px`;
-   window.requestAnimationFrame(moveDodgerLeft);
+   function step() {
+     DODGER.style.left = `${left += 1}px`
+  
+     if (left < left_limit) {
+       window.requestAnimationFrame(step)
+     }
+   }
+  
+   window.requestAnimationFrame(step)
 
 }
 

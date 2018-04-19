@@ -178,7 +178,7 @@ function moveDodgerLeft() {
     }else {
       left_limit = 0
     }
-    if(left_limit < 180) {
+    if(left_limit > 4) {
 
      function step() {
        DODGER.style.left = `${left += 1}px`
@@ -199,7 +199,7 @@ function moveDodgerRight() {
    * This function should move DODGER to the right
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
-   
+
 }
 
 /**

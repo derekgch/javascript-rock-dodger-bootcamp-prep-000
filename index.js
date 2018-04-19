@@ -121,7 +121,7 @@ function createRock(x) {
   ROCKS.push(rock)
 
   // Finally, return the rock element you've created
-  return rock
+  return rock;
 }
 
 /**
@@ -136,7 +136,7 @@ function endGame() {
   while (ROCKS.length > 0) {
     ROCKS.pop();
   }
-  alert "YOU LOSE!"
+  alert "YOU LOSE!";
 
 }
 

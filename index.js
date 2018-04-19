@@ -120,7 +120,6 @@ function createRock(x) {
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
   ROCKS.push(rock);
-
   // Finally, return the rock element you've created
   return rock;
 }
@@ -211,7 +210,7 @@ function moveDodgerRight() {
     if(right_limit < 360 ) {
 
      function step() {
-       DODGER.style.left = `${right += 1}px`
+       DODGER.style.left = `${right += 4}px`
 
        if (right < right_limit) {
          window.requestAnimationFrame(step)

@@ -92,6 +92,7 @@ function createRock(x) {
      */
      if(checkCollision(rock)){
        endGame();
+       return;
      }
      if (top < 360) {
     /**

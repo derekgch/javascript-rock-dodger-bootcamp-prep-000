@@ -196,7 +196,7 @@ function moveDodgerRight() {
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
    var right = positionToInteger(DODGER.style.right)
-   var right_limit = 400
+   var right_limit = 0
 
    if(right < 396 ){
     right_limit = right +4

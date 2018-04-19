@@ -174,7 +174,7 @@ function moveDodgerLeft() {
    var left_limit = 0
 
    if(left > 175){
-    left_limit =180
+    left_limit =179
   }else {
       left_limit = left +4
     }

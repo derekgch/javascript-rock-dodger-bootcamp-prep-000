@@ -139,7 +139,7 @@ describe('Rock Dodger', () => {
       for (let i = 0; i < 4; i++) {
         let rock = createRock(i)
 
-        spies.push(expect.spyOn(rock, 'remove'))
+        spies.push(expect.spyOn(rock, 'pop'))
       }
 
       endGame()

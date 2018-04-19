@@ -195,7 +195,7 @@ function moveDodgerRight() {
    * This function should move DODGER to the right
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
-   var right = positionToInteger(DODGER.style.right)
+   var right = positionToInteger(DODGER.style.left) +40
    var right_limit = 0
 
    if(right < 396 ){

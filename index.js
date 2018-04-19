@@ -133,7 +133,7 @@ function createRock(x) {
 function endGame() {
 
   clearInterval(gameInterval);
-  while (ROCKS.size > 0) {
+  while (ROCKS.length > 0) {
     rock = ROCKS.pop();
     rock.remove();
   }

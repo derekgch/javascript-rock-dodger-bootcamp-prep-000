@@ -175,12 +175,12 @@ function moveDodgerLeft() {
 
    function step() {
      DODGER.style.left = `${left += 1}px`
-  
+
      if (left < left_limit) {
        window.requestAnimationFrame(step)
      }
    }
-  
+
    window.requestAnimationFrame(step)
 
 }

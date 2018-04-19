@@ -110,6 +110,7 @@ function createRock(x) {
      rock.remove();
     }
    }
+   
    window.requestAnimationFrame(moveRock);
 
 
@@ -179,15 +180,15 @@ function moveDodgerLeft() {
     }
     if(left_limit > 4) {
 
-     function step() {
+     function step1() {
        DODGER.style.left = `${left -= 1}px`
 
        if (left > left_limit) {
-         window.requestAnimationFrame(step)
+         window.requestAnimationFrame(step1)
        }
      }
 
-     window.requestAnimationFrame(step)
+     window.requestAnimationFrame(step1)
    }
 
 }

@@ -202,7 +202,7 @@ function moveDodgerRight() {
     right_limit = right +4
     }
 
-    if(right_limit < 396 ) {
+    if(right_limit < 400 ) {
 
      function step() {
        DODGER.style.right = `${right += 1}px`

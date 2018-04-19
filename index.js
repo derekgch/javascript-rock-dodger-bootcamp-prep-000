@@ -102,7 +102,7 @@ function createRock(x) {
        if (top < 360) {
          window.requestAnimationFrame(moveRock);
        }
-       window.requestAnimationFrame(step);
+       window.requestAnimationFrame(moveRock);
      }else {
 
     /**
@@ -136,6 +136,8 @@ function endGame() {
   while (ROCKS.length > 0) {
     ROCKS.pop();
   }
+  alert "YOU LOSE!"
+  
 }
 
 function moveDodger(e) {
@@ -155,6 +157,7 @@ function moveDodgerLeft() {
    * This function should move DODGER to the left
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
+   
 }
 
 function moveDodgerRight() {

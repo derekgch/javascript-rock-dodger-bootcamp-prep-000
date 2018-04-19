@@ -129,11 +129,11 @@ function createRock(x) {
  */
 function endGame() {
 
-  // clearInterval(gameInterval);
-  // while (ROCKS.length > 0) {
-  //   ROCKS.pop();
-  // }
-  // alert "YOU LOSE!";
+  clearInterval(gameInterval);
+  while (ROCKS.length > 0) {
+    ROCKS.pop();
+  }
+  //alert "YOU LOSE!";
 
 }
 

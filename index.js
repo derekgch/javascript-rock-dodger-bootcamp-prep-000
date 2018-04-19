@@ -201,7 +201,7 @@ function moveDodgerRight() {
     }else {
       right_limit = 180
     }
-    if(right_limit <180 ) {
+    if(right_limit < 180 ) {
 
      function step() {
        DODGER.style.left = `${left -= 1}px`

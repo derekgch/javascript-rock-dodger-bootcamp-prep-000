@@ -133,7 +133,7 @@ function endGame() {
   while (ROCKS.length > 0) {
     ROCKS.pop();
   }
-  //alert "YOU LOSE!";
+  console.log("YOU LOSE!"); 
 
 }
 

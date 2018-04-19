@@ -98,10 +98,6 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
        rock.style.top = `${top += 2}px`;
-
-       if (top < 360) {
-         window.requestAnimationFrame(moveRock);
-       }
        window.requestAnimationFrame(moveRock);
      }else {
 
